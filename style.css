@@ -1,0 +1,110 @@
+/*
+ Theme Name:   Mon thème enfant
+ Theme URI:    https://portfolio.local
+ Description:  Description de mon thème enfant
+ Author:       Lucas
+ Author URI:   https://lucasjulian.fr
+ Template:     portfolio
+ Version:      1.0.0
+*/
+
+
+/*******************************************
+** Table of contents **
+** 
+**  Fonts
+********************************************/
+
+
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* End Font */
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #161f43;
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+#header {
+    border: 1px #1d2850 solid;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    border-bottom: 2px #171F38 solid;
+}
+
+header #logo {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #navigation {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header #navigation ul {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+header #navigation ul li {
+    list-style: none;
+}
+
+header #navigation ul li a {
+    color: #808dad;
+    text-decoration: none;
+}
+
+header #navigation ul li a:hover {
+    color: #eb4a4a;
+}
+
+header #navigation ul li a::after {
+    height: 2px;
+    background-color: #eb4a4a;
+    width: 33%;
+    display: block;
+    content: " ";
+    transition: all 0.2s ease;
+    opacity: 0;
+}
+
+header #navigation ul li a:hover::after {
+    opacity: 1;
+}
+
+header #phone {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #phone i {
+    color: #808dad;
+    padding-right: 5px;
+}
+
+header #phone span{
+    color: #eb4a4a;
+}
