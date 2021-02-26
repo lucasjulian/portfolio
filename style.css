@@ -36,14 +36,13 @@ body {
 }
 
 #header {
-    border: 1px #1d2850 solid;
+    border: 2px #1d2850 solid;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     height: 75px;
-    border-bottom: 2px #171F38 solid;
 }
 
 header #logo {
@@ -105,6 +104,126 @@ header #phone i {
     padding-right: 5px;
 }
 
-header #phone span{
+header #phone span {
     color: #eb4a4a;
+}
+
+#hero-hello {
+    min-height: 500px;
+    background-image: url(img/bg.png);
+    padding-top: 75px;
+}
+
+#introduce,
+#me {
+    width: 50%;
+}
+
+#introduce {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* IMG NEED TO BE EDIT  */ 
+
+/* #introduce .hero {
+    background-image: url('img/rect-hero-title.png');
+} */
+
+#introduce aside {
+    display: flex;
+}
+
+.button {
+    display: flex;
+    border: 1px #EB4A4A solid;
+    background-color: #171F38;
+    border-radius: 6px;
+    min-height: 55px;
+    min-width: 150px;
+    margin: 5px 15px 5px 0px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #EB4A4A;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.button:hover {
+    background-color: #808dad;
+    color: #FFFFFF;
+    transition: all 0.2s ease;
+}
+
+.button i {
+    margin: 0px 5px;
+}
+
+.button.link {
+    border-color: transparent;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* toolkit */
+
+h1 {
+    font-size: 5.5rem;
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+.quote {
+    color: #EB4A4A;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.quote::before {
+    content: url(img/red-line.png);
+    height: 10px;
+    position: relative;
+    top: -6px;
+    left: -5px;
+}
+
+.flex{
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.l-grey {
+    color: #808DAD;
+}
+
+.light-f {
+    font-weight: 100;
 }
