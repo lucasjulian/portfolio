@@ -24,7 +24,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: #161f43;
+    background-color: #0e1630;
     color: #FFFFFF;
     padding: 0;
     margin: 0;
@@ -119,10 +119,69 @@ header #phone span {
     width: 50%;
 }
 
+#me img {
+    display: flex;
+    max-width: 100%;
+}
+
+#about {
+    background-image: url('img/skill-meteor.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+#about > .container {
+    padding-top: 75px;
+    background-image: url('img/bg.png');
+}
+
+#interests{
+    width: 65%;
+}
+
+#about-me {
+    width: 35%;
+    flex-direction: column;
+}
+
+#interests {
+    display: grid;
+    grid-template-areas: "a right"
+                         "b right";
+}
+
 #introduce {
     justify-content: center;
     display: flex;
     flex-direction: column;
+}
+
+.block-interest {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #171f38;
+    border-radius: 25px 0px 25px 25px;
+    height: 136px;
+    width: 240px;
+    padding: 0px 25px;
+    margin: 25px;
+}
+
+.block-interest:hover {
+    box-shadow: 0px 0px 10px 5px #EB4A4A;
+    transition: all 0.125s ease-in-out;
+}
+
+.block-interest:nth-child(1),
+.block-interest:nth-child(2) {
+    margin-left: 0px !important;
+}
+
+.block-interest:nth-child(3) {
+    grid-area: right;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* IMG NEED TO BE EDIT  */ 
@@ -198,6 +257,10 @@ h3 {
     font-size: 2.5rem;
 }
 
+h4 {
+    font-size: 1.2rem;
+}
+
 .quote {
     color: #EB4A4A;
     font-size: 1.5rem;
@@ -220,6 +283,10 @@ h3 {
     justify-content: center;
 }
 
+.a-center {
+    align-items: center;
+}
+
 .l-grey {
     color: #808DAD;
 }
@@ -230,7 +297,11 @@ h3 {
 
 .separator {
     display: block;
-    background-color: #1e294f;
+    background-color: #161e37;
     height: 2px;
     width: 100%;
+}
+
+p {
+    color: #808DAD;
 }
