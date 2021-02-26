@@ -227,3 +227,10 @@ h3 {
 .light-f {
     font-weight: 100;
 }
+
+.separator {
+    display: block;
+    background-color: #1e294f;
+    height: 2px;
+    width: 100%;
+}
