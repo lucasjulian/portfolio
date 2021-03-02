@@ -130,7 +130,8 @@ header #phone span {
     background-repeat: no-repeat;
 }
 
-#about > .container {
+#about > .container,
+#about-me-deeper > .container {
     padding-top: 75px;
     background-image: url('img/bg.png');
 }
@@ -139,6 +140,7 @@ header #phone span {
     width: 65%;
 }
 
+#what-i-do,
 #about-me {
     width: 35%;
     flex-direction: column;
@@ -193,6 +195,22 @@ header #phone span {
 #introduce aside {
     display: flex;
 }
+
+#about-me-deeper {
+    background-image: url('img/miscellaneous-about-me.png');
+    background-repeat: no-repeat;
+    background-position: 60% 10%;
+}
+
+#cv {
+    flex-direction: column;
+    width: 50%;
+}
+
+#cv-illustr {
+    width: 50%;
+}
+
 
 .button {
     display: flex;

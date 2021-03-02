@@ -14,7 +14,7 @@
                 <h4>Prototyping & wireframing</h4>
             </div> 
         </div>
-        <div id="about-me" class="flex jc-center">
+        <div id="what-i-do" class="flex jc-center">
             <span class="quote">what I do</span>
             <h3>Better design,<br>Better experiences</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium quaerat delectus molestiae quas laboriosam</p>
