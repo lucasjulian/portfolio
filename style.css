@@ -132,7 +132,7 @@ header #phone span {
 
 #about > .container,
 #about-me-deeper > .container {
-    padding-top: 75px;
+    padding: 75px 0px;
     background-image: url('img/bg.png');
 }
 
@@ -207,42 +207,92 @@ header #phone span {
     width: 50%;
 }
 
+#cv aside .button {
+    justify-content: left;
+}
+
 #cv-illustr {
     width: 50%;
 }
 
+#contact {
+    background-image: url('img/miscellaneous-contact.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
 
-.button {
+#contact > .container {
+    padding: 75px 0px;
+    background-image: url('img/bg.png');
+}
+
+#contact #contact-me {
+    width: 45%;
+}
+ 
+#contact #contact-form {
+    width: 50%;
+}
+
+#contact-infos ul {
+    padding: 25px 0px;
+}
+
+#contact-infos ul li{
+    list-style: none;
     display: flex;
-    border: 1px #EB4A4A solid;
-    background-color: #171F38;
-    border-radius: 6px;
-    min-height: 55px;
-    min-width: 150px;
-    margin: 5px 15px 5px 0px;
+    margin-bottom: 15px;
+}
+
+#contact-infos ul li span {
+    background-color: rgba(235, 74, 74, 0.10);
+    height: 36px;
+    width: 36px;
+    display: grid;
     justify-content: center;
     align-items: center;
+    border-radius: 6px;
+}
+
+#contact-infos ul li span i {
+    color:#EB4A4A;
+}
+
+#contact-infos ul li a {
     text-decoration: none;
+    line-height: 36px;
+    padding-left: 5px;
+    color: #808DAD;
+}
+
+.social-network ul {
+    display: flex;
+    padding-left: 0px;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+
+.social-network ul li{
+    list-style: none;
+}
+
+
+.social-network ul li i {
+    color: #808DAD;
+    font-size: 2rem;
+}
+
+.social-network ul li i:hover {
     color: #EB4A4A;
-    font-weight: 500;
-    font-size: 1.2rem;
+    transform: scale(1.5);
+    transition: all 0.125s ease-in-out;
 }
 
-.button:hover {
-    background-color: #808dad;
-    color: #FFFFFF;
-    transition: all 0.2s ease;
-}
 
-.button i {
-    margin: 0px 5px;
-}
 
-.button.link {
-    border-color: transparent;
-    background-color: transparent;
-    text-decoration: underline;
-}
+
 
 
 
@@ -297,6 +347,10 @@ h4 {
     display: flex;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
 .jc-center {
     justify-content: center;
 }
@@ -323,3 +377,83 @@ h4 {
 p {
     color: #808DAD;
 }
+
+.button {
+    display: flex;
+    border: 1px #EB4A4A solid;
+    background-color: #171F38;
+    border-radius: 6px;
+    min-height: 55px;
+    min-width: 150px;
+    margin: 5px 15px 5px 0px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #EB4A4A;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.button:hover {
+    background-color: #808dad;
+    color: #FFFFFF;
+    transition: all 0.2s ease;
+}
+
+.button i {
+    margin: 0px 5px;
+}
+
+.button.link {
+    border-color: transparent;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* forms elements */ 
+
+input,
+textarea {
+    font-family: 'Quicksand', sans-serif;
+}
+
+input {
+    height: 75px;
+    background-color: #171F38;
+    border: none;
+    width: 100%;
+    max-width: 585px;
+    border-radius: 5px;
+    color: #808DAD;
+    font-size: 1rem;
+    text-indent: 15px;
+}
+
+input::placeholder {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: #808DAD;
+    text-indent: 15px;
+}
+
+textarea {
+    background-color: #171F38;
+    border: none;
+    width: 100%;
+    max-width: 545px;
+    border-radius: 5px;
+    color: #808DAD;
+    padding: 15px;
+}
+
+textarea::placeholder {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: #808DAD;
+}
+
+.wpcf7-not-valid-tip {
+    color: #EB4A4A;
+}
+
+/* END forms elements */ 
