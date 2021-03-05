@@ -26,20 +26,14 @@
 	<div class="container">
 		<header>
 			<div id="logo">
-				<img src="http://portfolio.local/wp-content/themes/portfolio-child/img/logo.svg" alt="" srcset="">
+				<?php the_custom_logo(); ?>
 			</div>
 			<div id="navigation">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
+				<?php wp_nav_menu(array('container' => ' ')); ?>
 			</div>
 			<div id="phone">
 				<i class="fas fa-phone-alt"></i>
-				<span>010 378 459 261<span>
+				<span><?php the_field('phone_number'); ?><span>
 			</div>
 		</header>
 	</div>
