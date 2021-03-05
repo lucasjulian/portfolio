@@ -25,9 +25,16 @@
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: #0e1630;
+    background-image: url(img/bg.png);
     color: #FFFFFF;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.site {
+    width: 100%;
 }
 
 .container {
@@ -36,7 +43,8 @@ body {
 }
 
 #header {
-    border: 2px #1d2850 solid;
+    border-bottom: 2px #1d2850 solid;
+    background-color: #0e1630;
 }
 
 header {
@@ -111,7 +119,6 @@ header #phone span {
 
 #hero-hello {
     min-height: 500px;
-    background-image: url(img/bg.png);
     padding-top: 75px;
 }
 
@@ -134,7 +141,6 @@ header #phone span {
 #about > .container,
 #about-me-deeper > .container {
     padding: 75px 0px;
-    background-image: url('img/bg.png');
 }
 
 #interests{
@@ -225,7 +231,6 @@ header #phone span {
 
 #contact > .container {
     padding: 75px 0px;
-    background-image: url('img/bg.png');
 }
 
 #contact #contact-me {
@@ -335,28 +340,6 @@ header #phone span {
     align-items: center;
     height: 75px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* toolkit */
 
@@ -507,3 +490,93 @@ textarea::placeholder {
 }
 
 /* END forms elements */ 
+
+
+/* RESDPONSIVE */
+
+@media screen and (max-width: 1024px) {
+    #hero-hello {
+        display: flex;
+        flex-direction: column;
+    }   
+
+    #about .container,
+    #about-me-deeper .container,
+    #contact .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+    #about #interests {
+        order: 2;
+    }
+
+    #about #what-i-do {
+        order: 1;
+        max-width: 80%;
+    }
+
+    #about-me-deeper #cv,
+    #about-me-deeper #cv-illustr,
+    #contact #contact-me,
+    #contact #contact-form {
+        max-width: 80%;
+    }
+
+    #contact .wpcf7 {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    #contact .wpcf7 textarea {
+        max-width: 95%;
+    }
+
+    #about-me-deeper #cv-illustr img{
+        margin: auto;
+        display: block;
+    }
+
+    #hero-hello #introduce,
+    #hero-hello #me,
+    #about #interests,
+    #about #what-i-do,
+    #about-me-deeper #cv-illustr, 
+    #contact #contact-me,
+    #contact #contact-form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .site {
+        width: calc(100% - 30px);
+    }
+
+    #introduce,
+    #about {
+        text-align: center;
+    }
+    #introduce aside {
+        justify-content: center;
+    }
+
+    #interests {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #interests .block-interest {
+        margin: 15px 0;
+    }
+
+    #cv-illustr img {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* END RESDPONSIVE */
+
