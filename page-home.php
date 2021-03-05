@@ -11,4 +11,6 @@ get_template_part( 'parts/separator' );
 get_template_part( 'parts/about-me' ); 
 get_template_part( 'parts/separator' );
 get_template_part( 'parts/contact-form' ); 
+get_template_part( 'parts/separator' );
+get_footer();
 ?>
