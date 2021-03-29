@@ -1,7 +1,9 @@
 <?php
-    function wpm_enqueue_styles(){
+    function wpm_enqueue_styles() {
+        wp_enqueue_style( 'swiper-style', 'https://unpkg.com/swiper/swiper-bundle.min.css' );
         wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
         wp_enqueue_script( 'font-awesome', 'https://kit.fontawesome.com/2b2495badb.js');
+        wp_enqueue_script( 'swiper', 'https://unpkg.com/swiper/swiper-bundle.min.js');
     }
     add_action( 'wp_enqueue_scripts', 'wpm_enqueue_styles' );
 
